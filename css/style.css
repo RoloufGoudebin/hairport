@@ -9149,16 +9149,21 @@ h1, h2, h3, h4, h5,
       color: #FFF; }
   .services .media-body h3 {
     font-size: 18px;
-    font-weight: 700; }
+    font-weight: 700;
+    color: #FFF; }
   @media (min-width: 992px) {
     .services.active {
       background: #FFF;
-      color: #000000; }
-      .services.active .icon span {
+      color: #000000;}
+      .services.active .icon span{
+        color: #000000; } 
+      .services.active h3{
         color: #000000; } }
   .services:hover, .services:focus {
     background: #FFF;
     color: #000000; }
+    .services:hover h3, .services:focus h3{
+      color: #000000; }
     .services:hover .icon span, .services:focus .icon span {
       color: #000000; }
 

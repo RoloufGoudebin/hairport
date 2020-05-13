@@ -8452,19 +8452,6 @@ h1, h2, h3, h4, h5,
               height: 600px; } }
           .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
             position: relative; }
-            .owl-carousel.home-slider .slider-item .slider-text .one-forth .text:after {
-              position: absolute;
-              top: -120px;
-              left: 50px;
-              right: 0;
-              bottom: 0;
-              content: '';
-              opacity: 0;
-              width: 80px;
-              background: transparent;
-              height: 120px;
-              border: 5px solid #FFF;
-              z-index: -1; }
               @media (min-width: 992px) {
                 .owl-carousel.home-slider .slider-item .slider-text .one-forth .text:after {
                   opacity: 1; } }

@@ -45,7 +45,8 @@ async function sendMail(user, callback) {
     to: "goudeloufrobin@gmail.com", // list of receivers
     subject: "Demande d'informations", // Subject line
     html: `<h1>Message de : ${user.name}</h1><br>
-    <h4>${user.equipment}</h4>`
+    <h4>Concerne :${user.equipment}</h4>
+    <p>Message : $<p>Message : ${user.question}<p>`
   };
 
   // send mail with defined transport object

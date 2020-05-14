@@ -42,11 +42,12 @@ async function sendMail(user, callback) {
 
   let mailOptions = {
     from: user.email, // sender address
-    to: "goudeloufrobin@gmail.com", // list of receivers
+    to: "Bernard@thehairport.eu", // list of receivers
     subject: "Demande d'informations", // Subject line
     html: `<h1>Message de : ${user.name}</h1><br>
     <h4>Concerne :${user.equipment}</h4>
-    <p>Message : $<p>Message : ${user.question}<p>`
+    <p>Question : ${user.question} <br>
+    Email : ${user.email}</p>`
   };
 
   // send mail with defined transport object

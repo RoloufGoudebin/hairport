@@ -42,8 +42,7 @@ export class ContentComponent implements OnInit {
       equipment: this.equipmentFormControl.value,
       question: this.questionFormControl.value
     }
-    console.log(this.equipmentFormControl.value);
-    this.http.post("http://localhost:3000/sendmail", user).subscribe(
+    this.http.post("http://51.68.191.35:3000/sendmail", user).subscribe(
       data => {
         let res: any = data;
         console.log(

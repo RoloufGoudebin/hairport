@@ -9146,13 +9146,6 @@ h1, h2, h3, h4, h5,
         color: #000000; } 
       .services.active h3{
         color: #000000; } }
-  .services:hover, .services:focus {
-    background: #FFF;
-    color: #000000; }
-    .services:hover h3, .services:focus h3{
-      color: #000000; }
-    .services:hover .icon span, .services:focus .icon span {
-      color: #000000; }
 
 .aside-stretch {
   background: #FFF; }

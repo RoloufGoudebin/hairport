@@ -22,32 +22,11 @@ var scrollWindow = function () {
       navbar = $('.ftco_navbar'),
       sd = $('.js-scroll-wrap');
 
-    if (st > 50) {
-      if (!navbar.hasClass('scrolled')) {
-        navbar.addClass('scrolled');
-      }
-    }
-    if (st < 50) {
-      if (navbar.hasClass('scrolled')) {
-        navbar.removeClass('scrolled sleep');
-      }
-    }
-    if (st > 50) {
-      if (!navbar.hasClass('awake')) {
-        navbar.addClass('awake');
-      }
 
-      if (sd.length > 0) {
-        sd.addClass('sleep');
-      }
-    }
     if (st < 50) {
       if (navbar.hasClass('awake')) {
         navbar.removeClass('awake');
         navbar.addClass('sleep');
-      }
-      if (sd.length > 0) {
-        sd.removeClass('sleep');
       }
     }
   });

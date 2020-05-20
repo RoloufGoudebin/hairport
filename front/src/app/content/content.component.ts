@@ -13,8 +13,6 @@ export class ContentComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  name1;
-  age;
   loading = false;
   buttionText = "Submit";
 
@@ -42,6 +40,7 @@ export class ContentComponent implements OnInit {
       equipment: this.equipmentFormControl.value,
       question: this.questionFormControl.value
     }
+
     this.http.post("http://51.68.191.35:3000/sendmail", user).subscribe(
       data => {
         let res: any = data;

@@ -1,16 +1,16 @@
-<section id="home-section" class="hero js-fullheight"
-	style="background-image: url(assets/images/banner.gif); overflow-y: auto;" data-stellar-background-ratio="0.5">
-	<div class="home-slider owl-carousel">
-		<div class="slider-item ">
+<section id="home-section" class="hero js-fullheight" style="background-image: url(assets/images/banner.gif);"
+	data-stellar-background-ratio="0.5">
+	<div class="home-slider owl-carousel" data-stellar-background-ratio="0.5">
+		<div class="slider-item">
 			<div class="container-fluid p-0">
 				<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-					data-scrollax-parent="true">
+					data-scrollax-parent="true" infinite-scroll-parent="true">
 					<div class="one-forth d-flex align-items-center ftco-animate"
 						data-scrollax=" properties: { translateY: '70%' }">
 						<div class="text mt-5">
 							<span class="subheading">Hairport</span>
-							<h1 class="mb-4 ">Our module bring you the best care</h1>
-							<p class="mb-4 text-black">Would you like to try and enjoy a manicure at the "Mediacité
+							<h1 class="mb-4 ">Our module brings you the best care</h1>
+							<p class="mb-4 text-black font-weight-bold">Would you like to try and enjoy a manicure at the "Mediacité
 								de Liège" ?</p>
 							<p class="text-white"><a
 									href="https://www.treatwell.be/fr/salon/hairport-beauty-is-everywhere/"
@@ -20,7 +20,6 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="slider-item">
 			<div class="container-fluid p-0">
 				<div class="row d-flex no-gutters slider-text align-items-center justify-content-end"
@@ -30,7 +29,7 @@
 						<div class="text mt-5">
 							<span class="subheading">Beauty is everywhere</span>
 							<h1 class="mb-4">The new Mobile Beauty Salon made in Belgium</h1>
-							<p class="mb-4 text-black"> Your time and your « well-feeling » are the most important to
+							<p class="mb-4 text-black font-weight-bold"> Your time and your « well-feeling » are the most important to
 								our team. So sit back, relax and enjoy the experience.</p>
 							<p class="text-white"><a href="#about" class="btn py-3 px-4 text-white"
 									style="background-color: black;">About us</a></p>
@@ -72,33 +71,7 @@
 
 <section id="service" class="services-section py-5 py-md-0" style="background-color: black;">
 	<div class="container">
-		<div class="row no-gutters d-flexr">
-			<div class="col-6 col-lg-3 align-self-stretch ftco-animate">
-				<div class="media block-6 services d-block">
-					<div class="icon text-center"><img class="mb-4" src="assets/images/make-up.png"></div>
-					<div class="media-body">
-						<h3 class="heading mb-3 text-center">Makeup</h3>
-						<ul class="px-0 mx-0">
-							<li>Full service Coming soon</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-lg-3 align-self-stretch ftco-animate">
-				<div class="media block-6 services d-block">
-					<div class="icon text-center"><img class="mb-4" src="assets/images/hair.png"></div>
-					<div class="media-body">
-						<h3 class="heading mb-3 text-center">Hair Styling</h3>
-						<ul class="px-0 mx-0">
-							<li>• A treat for your hair, in 20 to 30 minutes… </li>
-							<li>• Dry brushing </li>
-							<li>• Dry shampoo </li>
-							<li>• Haircut woman, man and child </li>
-							<li>• Beard grooming </li>
-						</ul>
-					</div>
-				</div>
-			</div>
+		<div class="row no-gutters">
 			<div class="col-6 col-lg-3 align-self-stretch ftco-animate">
 				<div class="media block-6 services d-block">
 					<div class="icon text-center"><img class="centers mb-4" src="assets/images/nails.png"></div>
@@ -117,9 +90,36 @@
 			</div>
 			<div class="col-6 col-lg-3 align-self-stretch ftco-animate">
 				<div class="media block-6 services d-block">
+					<div class="icon text-center"><img class="mb-4" src="assets/images/hair.png"></div>
+					<div class="media-body">
+						<h3 class="heading mb-3 text-center">Hair Styling</h3>
+						<ul class="px-0 mx-0">
+							<li>• A treat for your hair, in 20 to 30 minutes… </li>
+							<li>• Dry brushing </li>
+							<li>• Dry shampoo </li>
+							<li>• Haircut woman, man and child </li>
+							<li>• Beard grooming </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-6 col-lg-3 align-self-stretch ftco-animate">
+				<div class="media block-6 services d-block">
 					<div class="icon text-center"><img class="mb-4" src="assets/images/beard.png"></div>
 					<div class="media-body">
 						<h3 class="heading mb-3 text-center">Beard</h3>
+						<ul class="px-0 mx-0">
+							<li>Full service Coming soon</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-3 align-self-stretch ftco-animate">
+				<div class="media block-6 services d-block">
+					<div class="icon text-center"><img class="mb-4" src="assets/images/make-up.png"></div>
+					<div class="media-body">
+						<h3 class="heading mb-3 text-center">Makeup</h3>
 						<ul class="px-0 mx-0">
 							<li>Full service Coming soon</li>
 						</ul>
@@ -246,15 +246,16 @@
 								<div class="col-sm-12">
 									<div class="form-group">
 										<div class="select-wrap">
-											<div class="icon"><span class="ion-ios-arrow-down"></span></div>
-											<select id="" class="form-control" [formControl]="equipmentFormControl">
-												<option value="">Hairport's module for your event</option>
-												<option value="Makeup">Makeup</option>
-												<option value="Manicure">Manicure</option>
-												<option value="Beard">Beard</option>
-												<option value="Hair">Hair</option>
-												<option value="Other">Other</option>
-											</select>
+											<span>
+												<select id="form" class="form-control" [formControl]="equipmentFormControl">
+													<option value="">Hairport's module for your event</option>
+													<option value="Makeup">Makeup</option>
+													<option value="Manicure">Manicure</option>
+													<option value="Beard">Beard</option>
+													<option value="Hair">Hair</option>
+													<option value="Other">Other</option>
+												</select>
+											</span>
 										</div>
 									</div>
 								</div>
@@ -267,7 +268,7 @@
 							</div>
 							<div class="form-group">
 								<button class="btn my-3 text-white" style="background-color: black;"
-									(click)="register()">Send</button>
+									(click)="register()" data-toggle="modal" data-target="#exampleModal">Send</button>
 							</div>
 						</form>
 					</div>
@@ -275,6 +276,25 @@
 			</div>
 			<div class="one-third">
 				<div class="img" style="background-image: url(assets/images/contact.gif);">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-center">
+					<h4>Message sent</h4>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
@@ -314,7 +334,7 @@
 			</div>
 			<div class="col-md">
 				<div class="ftco-footer-widget mb-4">
-					<h2 class="ftco-heading-2">Have a Questions?</h2>
+					<h2 class="ftco-heading-2">Have a Question?</h2>
 					<div class="block-23 mb-3">
 						<ul>
 

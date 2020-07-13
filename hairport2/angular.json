@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hairport": {
+    "hairport2": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hairport",
+            "outputPath": "dist/hairport2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -21,21 +21,11 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/manifest.webmanifest"
+              "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.css",
-              "node_modules/aos/dist/aos.css",
-              "src/assets/css/animate.css",
-              "src/assets/css/ionicons.min.css",
-              "src/assets/css/style.css",
-              "src/assets/css/flaticon.css",
-              "src/assets/css/icomoon.css",
-              "src/assets/css/magnific-popup.css",
-              "src/assets/css/owl.theme.default.min.css",
-              "src/assets/css/owl.carousel.min.css",
-              "src/assets/css/my-icons-collection/font/flaticon.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
             ],
             "scripts": [
             ]
@@ -67,27 +57,25 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ],
-              "serviceWorker": false,
-              "ngswConfigPath": "ngsw-config.json"
+              ]
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "hairport:build"
+            "browserTarget": "hairport2:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "hairport:build:production"
+              "browserTarget": "hairport2:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hairport:build"
+            "browserTarget": "hairport2:build"
           }
         },
         "test": {
@@ -99,8 +87,7 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/manifest.webmanifest"
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -125,19 +112,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "hairport:serve"
+            "devServerTarget": "hairport2:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "hairport:serve:production"
+              "devServerTarget": "hairport2:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "hairport",
+  "defaultProject": "hairport2",
   "cli": {
-    "analytics": "e837836a-ebf2-4783-ac5d-9bb10403bef4"
+    "analytics": "98c357c3-4852-4e10-8787-11bc5e84c8a3"
   }
 }

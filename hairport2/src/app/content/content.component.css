@@ -1,0 +1,10 @@
+hr.title{
+    border-top: 3px solid black;
+}
+
+a.anchor{
+    display: block;
+    position: relative;
+    top: -130px;
+    visibility: hidden;
+}

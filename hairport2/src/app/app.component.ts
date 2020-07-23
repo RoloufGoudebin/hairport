@@ -9,8 +9,9 @@ export class AppComponent {
   title = 'hairport2';
 
   ngOnInit() {
-    this.loadScript('../node_modules/jquery/dist/jquery.min.js');
+    this.loadScript('../assets/js/jquery.min.js');
     this.loadScript('../assets/js/main.js');
+    this.loadScript('../assets/js/bootstrap.min.js');
   }
 
   public loadScript(url: string) {

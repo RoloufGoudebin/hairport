@@ -1,5 +1,5 @@
 hr.title{
-    border-top: 4px solid black;
+    border-top: 2px solid black;
 }
 
 a.anchor{
@@ -7,4 +7,32 @@ a.anchor{
     position: relative;
     top: -130px;
     visibility: hidden;
+}
+
+p,a
+{
+    font-family: 'Spinnaker', sans-serif;
+    line-height: 26.4px;
+}
+
+h2
+{
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 1.6em;
+    font-weight: 400;
+
+}
+
+
+h3
+{
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 1.2em;
+
+}
+
+h5
+{
+margin-top: -200px;
+
 }

@@ -1,4 +1,5 @@
 hr.title{
+  position: center;
     border-top: 2px solid black;
 }
 
@@ -70,6 +71,7 @@ margin-top: 140px;
 
 .item-2 {
   background-image: url('src/assets/images/hair.jpg');
+  background-position: left;
 }
 
 .item-3 {

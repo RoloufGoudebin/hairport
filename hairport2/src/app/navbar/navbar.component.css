@@ -10,6 +10,7 @@ p,a
     line-height: 26.4px;
 }
 
+/* ici ma tentative de bordure */
 .topnav span {
   float: left;
   display: block;
@@ -17,5 +18,5 @@ p,a
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  border-bottom: 3px red;
+  border-bottom: 3px solid;
 }

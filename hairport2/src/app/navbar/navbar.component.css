@@ -9,3 +9,13 @@ p,a
     font-family: 'Spinnaker', sans-serif;
     line-height: 26.4px;
 }
+
+.topnav span {
+  float: left;
+  display: block;
+  color: #1111;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: 3px red;
+}
